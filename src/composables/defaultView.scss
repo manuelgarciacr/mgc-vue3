@@ -1,0 +1,55 @@
+.sidemenu-btn {
+    position: fixed;
+    min-width: 0;
+    padding: 4px 2px 0 0;
+    top: var(--buttonTop);
+    left: 18px;
+    z-index: 250 !important;
+    transform: rotate3d(0, 0, 1, 0deg);
+    &.open {
+        transform: rotate3d(0, 0, 1, 180deg);
+    }
+    transition: transform ease 500ms;
+    background-color: rgb(var(--v-theme-surface));
+}
+.side-menu {
+    position: fixed;
+    top: var(--sideTop);
+    margin-left: var(--sideMargin);
+    width: var(--sideMenuWidth);
+    &.open {
+        margin-left: 0;
+    }
+    transition: margin-left ease 500ms;
+    // height: 100%;
+}
+.default-view {
+    &.open {
+        margin-left: var(--contentMargin);
+    }
+    &.hidden {
+        margin-left: 0;
+    }
+    transition: margin-left ease 500ms;
+}
+section {
+    margin-left: 1rem;
+    hr {
+        margin-bottom: 1.5rem;
+    }
+    &.last {
+        min-height: var(--windowHeightPx);
+    }
+    article.last {
+        min-height: var(--windowHeightPx);
+    }
+    article {
+        margin: 1rem;
+    }
+    article > h3 {
+        margin: 1.5rem 0;
+    }
+    article > h4 {
+        margin: 1rem 0;
+    }
+}

@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+:root {
+    --version: "v1.0.0";
+}
+
+* {
+    font-family: "Roboto", sans-serif;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version */
+}
+
+h1,
+h2 {
+    font-family: "Pacifico", cursive;
+}
+
+select {
+    //color: -webkit-link;
+    color: rgb(var(--v-theme-on-select));
+    cursor: pointer;
+    //color: rgba(208,173,240);
+    //color: rgb(var(--v-theme-on-background));
+}
+
+option {
+    background-color: rgb(var(--v-theme-surface-lighten-2));
+}
